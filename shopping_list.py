@@ -12,6 +12,11 @@ for shop, products in shopping_list.items():
 
 
 for shop, products in shopping_list.items():
+    if shop == 'warzywniak':
+        shopping_list[shop].append('szparagi')
+
+
+for shop, products in shopping_list.items():
     number_off_products += len(products)
     shop = shop.capitalize()
     for i in range(len(products)):
