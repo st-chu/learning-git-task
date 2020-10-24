@@ -6,6 +6,12 @@ number_off_products = 0
 
 
 for shop, products in shopping_list.items():
+    for product in products:
+        if product.lower() == 'pączek':
+            products.remove('pączek')
+
+
+for shop, products in shopping_list.items():
     number_off_products += len(products)
     shop = shop.capitalize()
     for i in range(len(products)):
